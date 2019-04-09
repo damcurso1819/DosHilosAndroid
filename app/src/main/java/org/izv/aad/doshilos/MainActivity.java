@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "xyzTagzyx";
+    public static final String TAG = MainActivity.class.getSimpleName();
 
     private Button btDo;
     private TextView tvTexto1;
@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
-        this.tvTexto2 = findViewById(R.id.tvTexto2);
-        this.tvTexto1 = findViewById(R.id.tvTexto1);
         this.btDo = findViewById(R.id.btDo);
+        this.tvTexto1 = findViewById(R.id.tvTexto1);
+        this.tvTexto2 = findViewById(R.id.tvTexto2);
 
         this.btDo.setOnClickListener(new View.OnClickListener() {
             @Override
